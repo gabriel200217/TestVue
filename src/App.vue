@@ -10,7 +10,7 @@ import transporte from './assets/transporte.jpg'
 </script>
 
 <template>
-  <div :class="{ 'grid-cols-1': anchoPantalla < 980 }" class="grid grid-cols-3 gap-3 bg-black">
+  <div :class="{ 'grid-cols-1': anchoPantalla < 980, 'grid grid-cols-3 gap-3 bg-black': anchoPantalla > 980}">
     <div class="grid pl-20 pt-10">
       <div>
         <p class="text-primary border-b-2 w-5" @click="() => {carouselRef.slideTo(0), changeOpacity()}">01</p>
